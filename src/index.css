@@ -1,0 +1,149 @@
+/* index.css */
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem; /* Reducimos el padding interno */
+    width: 95%;     /* Que ocupe casi todo el ancho */
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Título más pequeño en móvil */
+  }
+
+  .mic-button {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+
+  .audio-controls {
+    flex-wrap: wrap; /* Si no caben los botones, que se bajen */
+    justify-content: center;
+  }
+
+  .btn-control {
+    flex: 1 1 40%; /* Que los botones crezcan para ser fáciles de tocar */
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+:root {
+  --primary-glow: #4facfe;
+  --error-glow: #ff4b2b;
+  --bg-dark: #0f0c29;
+  --bg-gradient: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient);
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #fff, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  opacity: 0.7;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.mic-button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mic-idle {
+  background: linear-gradient(120deg, #00f2fe 0%, #4facfe 100%);
+  box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
+}
+
+.mic-active {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  box-shadow: 0 0 30px rgba(255, 75, 43, 0.6);
+  transform: scale(1.1);
+}
+
+.response-box {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: left;
+  border-left: 4px solid var(--primary-glow);
+  min-height: 120px;
+}
+
+.response-box strong {
+  color: var(--primary-glow);
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.response-text {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.audio-controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Los centramos para que luzcan mejor */
+}
+
+.btn-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-control:hover {
+  background: #4facfe; /* El mismo azul de tu botón principal */
+  border-color: #4facfe;
+  transform: translateY(-2px);
+}
