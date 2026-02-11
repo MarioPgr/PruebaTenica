@@ -3,9 +3,8 @@
 Este proyecto es un Voicebot interactivo desarrollado en **React** para la prueba técnica JS 2026. Utiliza inteligencia artificial avanzada para narrar y registrar eventos históricos.
 
 ##  Características Principales
-- **Protocolo de Voz ISAC:** Sistema de síntesis de voz (Web Speech API) personalizado con un tono analítico y grave inspirado en *The Division*.
+- Sistema de síntesis de voz (Web Speech API) personalizado con un tono analítico y grave.
 - **IA de Vanguardia:** Implementación de **Gemini 3 Flash Preview** (Modelo 2026) con capacidades de *Function Calling*.
-- **Accesibilidad:** Soporta entrada de voz y entrada de texto manual para usuarios con discapacidad del habla o en entornos silenciosos.
 - **Controles de Audio:** Funciones para pausar, reanudar y detener la locución de la IA.
 
 ##  Tecnologías Usadas
@@ -20,4 +19,5 @@ Este proyecto es un Voicebot interactivo desarrollado en **React** para la prueb
 4. Ejecutar `npm run dev`.
 
 ---
+"Nota: El proyecto utiliza el Tier Gratuito de la API de Gemini 3. En caso de recibir un error 429 (Rate Limit), por favor esperar 60 segundos antes de realizar una nueva consulta."
 *Proyecto desarrollado por Mario - Estudiante de Programación 2026.*
